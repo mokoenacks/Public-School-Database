@@ -45,13 +45,13 @@ INSERT INTO teachers VALUES (1001,'Taetso Mashego','1985-05-10','male','N54,Shat
 
 -- parents section
 
-CREATE TABLE IF NOT EXISTS `parents` (
-  `parent_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS `guardian` (
+  `guardian_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` longtext COLLATE utf8_unicode_ci NOT NULL,
   `email` longtext COLLATE utf8_unicode_ci NOT NULL,
   `password` longtext COLLATE utf8_unicode_ci NOT NULL,
   `student_id` int(11) NOT NULL,
-  `relation_with_student` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `relationship` longtext COLLATE utf8_unicode_ci NOT NULL,
   `phone` longtext COLLATE utf8_unicode_ci NOT NULL,
   `address` longtext COLLATE utf8_unicode_ci NOT NULL,
   `profession` longtext COLLATE utf8_unicode_ci NOT NULL,
